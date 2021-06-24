@@ -1,0 +1,9 @@
+Sendo um usuário cadastrado
+Quero acessar o webdelivery
+Para que eu possa realizar meus pedidos
+
+Cenario: Pedido de item sem complemento, sem troco
+
+    Dado que acesso a página webdelivery
+    Quando realizo um pedido com item no carrinho sem complemento e sem troco. 
+    Então ao final vejo a mensagem: Pedido enviado com sucesso!
