@@ -3,7 +3,8 @@
 Funcionalidade: Pedido no Webdelivery
 Sendo um usuário cadastrado
 Quero acessar o webdelivery
-Para que eu possa realizar meus pedidos
+Para que eu possa realizar meus pedidos, com mapa de entrega e pizzas com valor da média dos sabores
+
 
 @sem_complemento_sem_troco
 Cenario: Pedido de item sem complemento, sem troco
