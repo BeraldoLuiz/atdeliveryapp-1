@@ -49,7 +49,7 @@ Quando('submeto minhas credenciais com email incorreto') do
     find("#client_email").set "anderson.neemo$gmail.coin"
     find("#client_password").set "neemo2020"
     click_button("ENTRAR")
-  end
+end
   
 Então('Exibe a mensagem:Login inválido.') do
     mensagem = find("#login_errors_div")
