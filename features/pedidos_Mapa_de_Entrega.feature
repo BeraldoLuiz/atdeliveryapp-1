@@ -82,3 +82,17 @@ Cenario: Pedido de pizza de 4 sabores sem complemento, sem borda e sem troco
     Dado que acesso a página webdelivery
     Quando realizo um pedido de pizza de quatro sabores sem complemento, sem borda e sem troco. 
     Então Vejo a mensagem: Pedido enviado com sucesso!
+
+@item_pizza_2sabores_com_complemento_borda_troco
+Cenario: Pedido de itens comuns e pizza de 2 sabores com complemento, borda e com troco
+
+    Dado que acesso a página webdelivery
+    Quando realizo um pedido de itens comuns e pizza de dois sabores com complemento, borda e com troco. 
+    Então Vejo a mensagem: Pedido enviado com sucesso!
+
+@item_preço_com_variação_promocionado
+Cenario: Pedido de item com o preço da variação promocionado
+
+    Dado que acesso a página webdelivery
+    Quando realizo um pedido de item com o preço da variação promocionado. 
+    Então Vejo a mensagem: Pedido enviado com sucesso!
