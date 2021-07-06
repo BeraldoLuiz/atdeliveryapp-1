@@ -632,11 +632,5 @@ Quando('realizo um pedido de item com o preço da variação promocionado.') do
         sleep 4
         find(:xpath, '//*[@id="new_version"]/div[8]/div/div[10]/button[2]').click 
 end
-
-Então('Vejo a mensagem: Pedido enviado com sucesso!') do
-    message = find("#swal2-title")
-    expect(message.text).to eql "Pedido enviado com sucesso!"
-    sleep 3
-end
   
   
