@@ -3,6 +3,7 @@ Dado('que acesso a página webdelivery') do
 end
   
 Quando('realizo um pedido de item sem complemento e sem troco.') do
+        click_button("CONCORDO") 
     #cardapio
         sleep 2
         find(:xpath, '//*[@id="category_136690"]').click
@@ -34,6 +35,7 @@ Quando('realizo um pedido de item sem complemento e sem troco.') do
 end
 
 Quando('realizo um pedido de item com complemento e sem troco.') do
+        click_button("CONCORDO") 
     #cardapio
         sleep 2
         find(:xpath, '//*[@id="category_136689"]').click
@@ -67,6 +69,7 @@ Quando('realizo um pedido de item com complemento e sem troco.') do
 end
 
 Quando('realizo um pedido de item sem complemento e com troco.') do
+        click_button("CONCORDO") 
     #cardapio
         sleep 2
         find(:xpath, '//*[@id="category_136690"]').click
@@ -98,6 +101,7 @@ Quando('realizo um pedido de item sem complemento e com troco.') do
 end
 
 Quando('realizo um pedido de item com complemento e com troco.') do
+        click_button("CONCORDO") 
     #cardapio
         sleep 2
         find(:xpath, '//*[@id="category_136689"]').click
@@ -131,6 +135,7 @@ Quando('realizo um pedido de item com complemento e com troco.') do
 end
 
 Quando('realizo um pedido de pizza com complemento e com troco.') do
+      click_button("CONCORDO") 
     #cardapio
         sleep 3
         find(:xpath, '//*[@id="category_136694"]').click
@@ -174,6 +179,7 @@ Quando('realizo um pedido de pizza com complemento e com troco.') do
 end
 
 Quando('realizo um pedido de pizza sem complemento e sem troco.') do
+        click_button("CONCORDO") 
     #cardapio
         sleep 2
         find(:xpath, '//*[@id="category_136694"]').click
@@ -207,6 +213,7 @@ Quando('realizo um pedido de pizza sem complemento e sem troco.') do
 end
 
 Quando('realizo um pedido de pizza de dois sabores com complemento, borda e com troco.') do
+        click_button("CONCORDO") 
     #cardapio
         sleep 3
         find(:xpath, '//*[@id="category_136694"]').click
@@ -258,6 +265,7 @@ Quando('realizo um pedido de pizza de dois sabores com complemento, borda e com 
 end
 
 Quando('realizo um pedido de pizza de três sabores com complemento, borda e com troco.') do
+        click_button("CONCORDO") 
     #cardapio
         sleep 3
         find(:xpath, '//*[@id="category_136694"]').click
@@ -316,6 +324,7 @@ Quando('realizo um pedido de pizza de três sabores com complemento, borda e com
 end
   
 Quando('realizo um pedido de pizza de quatro sabores com complemento, borda e com troco.') do
+        click_button("CONCORDO") 
     #cardapio
         sleep 3
         find(:xpath, '//*[@id="category_136694"]').click
@@ -381,6 +390,7 @@ Quando('realizo um pedido de pizza de quatro sabores com complemento, borda e co
 end
 
 Quando('realizo um pedido de pizza de dois sabores sem complemento, sem borda e sem troco.') do
+        click_button("CONCORDO") 
     #cardapio
         sleep 3
         find(:xpath, '//*[@id="category_136694"]').click
@@ -427,6 +437,7 @@ Quando('realizo um pedido de pizza de dois sabores sem complemento, sem borda e 
 end
 
 Quando('realizo um pedido de pizza de três sabores sem complemento, sem borda e sem troco.') do
+        click_button("CONCORDO") 
     #cardapio
         sleep 3
         find(:xpath, '//*[@id="category_136694"]').click
@@ -478,6 +489,7 @@ Quando('realizo um pedido de pizza de três sabores sem complemento, sem borda e
 end
 
 Quando('realizo um pedido de pizza de quatro sabores sem complemento, sem borda e sem troco.') do
+        click_button("CONCORDO") 
     #cardapio
         sleep 3
         find(:xpath, '//*[@id="category_136694"]').click
@@ -534,6 +546,7 @@ Quando('realizo um pedido de pizza de quatro sabores sem complemento, sem borda 
 end
 
 Quando('realizo um pedido de itens comuns e pizza de dois sabores com complemento, borda e com troco.') do
+        click_button("CONCORDO") 
     #cardapio
         sleep 3
         find(:xpath, '//*[@id="category_136694"]').click
@@ -600,6 +613,7 @@ Quando('realizo um pedido de itens comuns e pizza de dois sabores com complement
 end
 
 Quando('realizo um pedido de item com o preço da variação promocionado.') do
+        click_button("CONCORDO") 
     #cardapio
         sleep 3
         find('#category_promotion').click
