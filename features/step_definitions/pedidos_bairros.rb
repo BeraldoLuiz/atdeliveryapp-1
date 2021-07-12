@@ -1,5 +1,5 @@
 Dado('que acesso a página webdelivery cep único') do
-    visit 'https://deliveryapp.neemo.com.br/delivery/8362/menu'
+    visit '/delivery/8362/menu'
 end
   
 Quando('realizo um pedido de pizza de dois sabores considerando o maior valor, com complemento, borda e com troco.') do

@@ -1,6 +1,6 @@
 #acesso a pagina
 Dado('que acesso a área de login') do
-    visit "https://deliveryapp.neemo.com.br/delivery/9473/menu"
+    visit "/delivery/9473/menu"
 end
 
 

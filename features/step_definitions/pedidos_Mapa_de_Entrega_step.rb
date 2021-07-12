@@ -1,5 +1,5 @@
 Dado('que acesso a página webdelivery') do
-    visit 'https://deliveryapp.neemo.com.br/delivery/9473/menu'
+    visit '/delivery/9473/menu'
 end
   
 Quando('realizo um pedido de item sem complemento e sem troco.') do
