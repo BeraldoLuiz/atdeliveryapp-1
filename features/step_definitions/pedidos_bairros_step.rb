@@ -205,7 +205,7 @@ Quando('realizo um pedido de pizza de quatro sabores considerando o maior valor,
 end
 
 Quando('realizo um pedido de pizza de dois sabores considerando o maior valor, sem complemento, sem borda e sem troco.') do
-    click_button("CONCORDO")    
+        click_button("CONCORDO")    
     #cardapio
         sleep 3
         find(:xpath, '//*[@id="category_150767"]').click 
@@ -262,7 +262,7 @@ Quando('realizo um pedido de pizza de dois sabores considerando o maior valor, s
 end
   
 Quando('realizo um pedido de pizza de três sabores considerando o maior valor, sem complemento, sem borda e sem troco.') do
-    click_button("CONCORDO")
+        click_button("CONCORDO")
     #cardapio
         sleep 3
         find(:xpath, '//*[@id="category_150767"]').click 
@@ -327,7 +327,7 @@ Quando('realizo um pedido de pizza de três sabores considerando o maior valor, 
 end
   
 Quando('realizo um pedido de pizza de quatro sabores considerando o maior valor, sem complemento, sem borda e sem troco.') do
-    click_button("CONCORDO")
+        click_button("CONCORDO")
     #cardapio
         sleep 3
         find(:xpath, '//*[@id="category_150767"]').click 

@@ -135,7 +135,7 @@ Quando('realizo um pedido de item com complemento e com troco.') do
 end
 
 Quando('realizo um pedido de pizza com complemento e com troco.') do
-      click_button("CONCORDO") 
+        click_button("CONCORDO") 
     #cardapio
         sleep 3
         find(:xpath, '//*[@id="category_136694"]').click
@@ -760,7 +760,7 @@ Quando('realizo um pedido de item com complemento e com troco, retirando no esta
 end
 
 Quando('realizo um pedido de pizza com complemento e com troco, retirando no estabelecimento.') do
-    click_button("CONCORDO") 
+        click_button("CONCORDO") 
     #cardapio
         sleep 3
         find(:xpath, '//*[@id="category_136694"]').click

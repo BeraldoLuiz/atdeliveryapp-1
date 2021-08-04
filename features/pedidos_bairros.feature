@@ -2,8 +2,8 @@
 
 Funcionalidade: Pedido no Webdelivery cep unico
 Sendo um usuário cadastrado
-Quero acessar o webdelivery cep único
-Para que eu possa realizar meus pedidos, informando bairro e sabores das pizzas cobrados pelo maior valor
+Quero acessar o webdelivery cep único, para que eu possa realizar meus pedidos, informando bairro e sabores das pizzas cobrados pelo maior valor
+Programa de fidelidade com desconto em porcentagem
 
 @maiorvalor_2sabores_com_complemento_borda_troco
 Cenario: Pedido de pizza de 2 sabores considerando o maior valor, com complemento, borda e com troco
