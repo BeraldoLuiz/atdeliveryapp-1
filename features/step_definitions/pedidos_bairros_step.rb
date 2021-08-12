@@ -5,9 +5,7 @@ end
 Quando('realizo um pedido de pizza de dois sabores considerando o maior valor, com complemento, borda e com troco.') do
         click_button("CONCORDO")    
     #cardapio
-        sleep 3
         find(:xpath, '//*[@id="category_150767"]').click 
-        sleep 3
             #Tamanho da Pizza
         find(:xpath, '//*[@id="itens_category_150767"]/div[3]/div[2]/a[2]').click
             #1º sabor da pizza
@@ -32,13 +30,11 @@ Quando('realizo um pedido de pizza de dois sabores considerando o maior valor, c
         click_button('Adicionar ao carrinho')
         find('#div-botao-confirmar-pagamento').click
     #login
-        sleep 3
             #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
     #entrega
-        sleep 3
         find('#botao_adicionar_endereco').click
         find(:xpath, '//*[@id="cidade"]/option[2]').select_option
         find('#rua_form_cep').set "Rua Fernando Lopes"
@@ -48,7 +44,6 @@ Quando('realizo um pedido de pizza de dois sabores considerando o maior valor, c
         click_button('Buscar') 
         find(:xpath, '//*[@id="ul_filtro_endereco"]/a/li/div[2]/p').click
     #pagamento
-        sleep 3
         find('#btn-local-e').click
         find(:xpath, '//*[@id="form-pag-local"]/div[2]/div/label').click 
         find('#order_troco').set "100.00"
@@ -56,18 +51,14 @@ Quando('realizo um pedido de pizza de dois sabores considerando o maior valor, c
         #find('#cpfcnpj2').set "37771693822"
         find('#order_notes').set "Observação de teste na finalização do pedido"
         find('#finish_order').click
-        sleep 4
         find(:xpath, '//*[@id="swal2-content"]/div/label/p').click
         click_button('Avançar') 
-        sleep 3
 end
 
 Quando('realizo um pedido de pizza de três sabores considerando o maior valor, com complemento, borda e com troco.') do
         click_button("CONCORDO")
     #cardapio
-        sleep 3
         find(:xpath, '//*[@id="category_150767"]').click 
-        sleep 3
             #Tamanho da Pizza
         find(:xpath, '//*[@id="itens_category_150767"]/div[3]/div[2]/a[3]').click
             #1º sabor da pizza
@@ -97,16 +88,13 @@ Quando('realizo um pedido de pizza de três sabores considerando o maior valor, 
             #adicionar ao carrinho
         find('#notes').set "Sem Cebola"
         click_button('Adicionar ao carrinho')
-        sleep 2
         find('#div-botao-confirmar-pagamento').click
     #login
-        sleep 3
             #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
     #entrega
-        sleep 3
         find('#botao_adicionar_endereco').click
         find(:xpath, '//*[@id="cidade"]/option[2]').select_option
         find('#rua_form_cep').set "Rua Fernando Lopes"
@@ -116,7 +104,6 @@ Quando('realizo um pedido de pizza de três sabores considerando o maior valor, 
         click_button('Buscar') 
         find(:xpath, '//*[@id="ul_filtro_endereco"]/a/li/div[2]/p').click
     #pagamento
-        sleep 3
         find('#btn-local-e').click
         find(:xpath, '//*[@id="form-pag-local"]/div[2]/div/label').click 
         find('#order_troco').set "100.00"
@@ -124,18 +111,14 @@ Quando('realizo um pedido de pizza de três sabores considerando o maior valor, 
         #find('#cpfcnpj2').set "37771693822"
         find('#order_notes').set "Observação de teste na finalização do pedido"
         find('#finish_order').click
-        sleep 4
         find(:xpath, '//*[@id="swal2-content"]/div/label/p').click
         click_button('Avançar') 
-        sleep 3
 end
 
 Quando('realizo um pedido de pizza de quatro sabores considerando o maior valor, com complemento, borda e com troco.') do
         click_button("CONCORDO")
     #cardapio
-        sleep 3
         find(:xpath, '//*[@id="category_150767"]').click 
-        sleep 3
             #Tamanho da Pizza
         find(:xpath, '//*[@id="itens_category_150767"]/div[3]/div[2]/a[4]').click
             #1º sabor da pizza
@@ -174,13 +157,11 @@ Quando('realizo um pedido de pizza de quatro sabores considerando o maior valor,
         click_button('Adicionar ao carrinho')
         find('#div-botao-confirmar-pagamento').click
     #login
-        sleep 3
             #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
     #entrega
-        sleep 3
         find('#botao_adicionar_endereco').click
         find(:xpath, '//*[@id="cidade"]/option[2]').select_option
         find('#rua_form_cep').set "Rua Fernando Lopes"
@@ -190,7 +171,6 @@ Quando('realizo um pedido de pizza de quatro sabores considerando o maior valor,
         click_button('Buscar') 
         find(:xpath, '//*[@id="ul_filtro_endereco"]/a/li/div[2]/p').click
     #pagamento
-        sleep 3
         find('#btn-local-e').click
         find(:xpath, '//*[@id="form-pag-local"]/div[2]/div/label').click 
         find('#order_troco').set "100.00"
@@ -198,18 +178,14 @@ Quando('realizo um pedido de pizza de quatro sabores considerando o maior valor,
         #find('#cpfcnpj2').set "37771693822"
         find('#order_notes').set "Observação de teste na finalização do pedido"
         find('#finish_order').click
-        sleep 4
         find(:xpath, '//*[@id="swal2-content"]/div/label/p').click
         click_button('Avançar') 
-        sleep 3
 end
 
 Quando('realizo um pedido de pizza de dois sabores considerando o maior valor, sem complemento, sem borda e sem troco.') do
         click_button("CONCORDO")    
     #cardapio
-        sleep 3
         find(:xpath, '//*[@id="category_150767"]').click 
-        sleep 3
             #Tamanho da Pizza
         find(:xpath, '//*[@id="itens_category_150767"]/div[3]/div[2]/a[2]').click
             #1º sabor da pizza
@@ -234,13 +210,11 @@ Quando('realizo um pedido de pizza de dois sabores considerando o maior valor, s
         click_button('Adicionar ao carrinho')
         find('#div-botao-confirmar-pagamento').click
     #login
-        sleep 3
         #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
     #entrega
-        sleep 3
         find('#botao_adicionar_endereco').click
         find(:xpath, '//*[@id="cidade"]/option[2]').select_option
         find('#rua_form_cep').set "Rua Fernando Lopes"
@@ -250,23 +224,18 @@ Quando('realizo um pedido de pizza de dois sabores considerando o maior valor, s
         click_button('Buscar') 
         find(:xpath, '//*[@id="ul_filtro_endereco"]/a/li/div[2]/p').click        
     #pagamento
-        sleep 2
         find('#btn-local-e').click
         find(:xpath, '//*[@id="form-pag-local"]/div[2]/div/label').click 
         find(:xpath, '//*[@id="label_troco"]').click
         find('#finish_order').click
-        sleep 4
         find(:xpath, '//*[@id="swal2-content"]/div/label/p').click
         click_button('Avançar') 
-        sleep 3
 end
   
 Quando('realizo um pedido de pizza de três sabores considerando o maior valor, sem complemento, sem borda e sem troco.') do
         click_button("CONCORDO")
     #cardapio
-        sleep 3
         find(:xpath, '//*[@id="category_150767"]').click 
-        sleep 3
             #Tamanho da Pizza
         find(:xpath, '//*[@id="itens_category_150767"]/div[3]/div[2]/a[3]').click
             #1º sabor da pizza
@@ -296,16 +265,13 @@ Quando('realizo um pedido de pizza de três sabores considerando o maior valor, 
             #adicionar ao carrinho
         find('#notes').set "Sem Cebola"
         click_button('Adicionar ao carrinho')
-        sleep 2
         find('#div-botao-confirmar-pagamento').click
     #login
-        sleep 3
         #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
     #entrega
-        sleep 3
         find('#botao_adicionar_endereco').click
         find(:xpath, '//*[@id="cidade"]/option[2]').select_option
         find('#rua_form_cep').set "Rua Fernando Lopes"
@@ -315,23 +281,18 @@ Quando('realizo um pedido de pizza de três sabores considerando o maior valor, 
         click_button('Buscar') 
         find(:xpath, '//*[@id="ul_filtro_endereco"]/a/li/div[2]/p').click        
     #pagamento
-        sleep 2
         find('#btn-local-e').click
         find(:xpath, '//*[@id="form-pag-local"]/div[2]/div/label').click 
         find(:xpath, '//*[@id="label_troco"]').click
         find('#finish_order').click
-        sleep 4
         find(:xpath, '//*[@id="swal2-content"]/div/label/p').click
         click_button('Avançar') 
-        sleep 3
 end
   
 Quando('realizo um pedido de pizza de quatro sabores considerando o maior valor, sem complemento, sem borda e sem troco.') do
         click_button("CONCORDO")
     #cardapio
-        sleep 3
         find(:xpath, '//*[@id="category_150767"]').click 
-        sleep 3
             #Tamanho da Pizza
         find(:xpath, '//*[@id="itens_category_150767"]/div[3]/div[2]/a[4]').click
             #1º sabor da pizza
@@ -370,13 +331,11 @@ Quando('realizo um pedido de pizza de quatro sabores considerando o maior valor,
         click_button('Adicionar ao carrinho')
         find('#div-botao-confirmar-pagamento').click
     #login
-        sleep 3
         #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
     #entrega
-        sleep 3
         find('#botao_adicionar_endereco').click
         find(:xpath, '//*[@id="cidade"]/option[2]').select_option
         find('#rua_form_cep').set "Rua Fernando Lopes"
@@ -386,13 +345,10 @@ Quando('realizo um pedido de pizza de quatro sabores considerando o maior valor,
         click_button('Buscar') 
         find(:xpath, '//*[@id="ul_filtro_endereco"]/a/li/div[2]/p').click        
     #pagamento
-        sleep 2
         find('#btn-local-e').click
         find(:xpath, '//*[@id="form-pag-local"]/div[2]/div/label').click 
         find(:xpath, '//*[@id="label_troco"]').click
         find('#finish_order').click
-        sleep 4
         find(:xpath, '//*[@id="swal2-content"]/div/label/p').click
         click_button('Avançar') 
-        sleep 3
 end
