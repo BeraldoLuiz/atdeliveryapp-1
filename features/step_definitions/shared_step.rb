@@ -1,3 +1,7 @@
+def wait_for_page_load
+    wait_for_loading && wait_for_loaded
+end
+
 #Logado Corretamente
 Então('sou redirecionado para o cardápio online') do
     mensagem = find(".welcome-user-desktop")
