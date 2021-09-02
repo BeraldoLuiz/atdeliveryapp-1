@@ -1,7 +1,7 @@
 Dado('que acesso a página webdelivery cep único') do
     visit '/delivery/8362/menu'
 end
-  
+
 Quando('realizo um pedido de pizza de dois sabores considerando o maior valor, com complemento, borda e com troco.') do
         click_button("CONCORDO")    
     #cardapio
@@ -30,17 +30,19 @@ Quando('realizo um pedido de pizza de dois sabores considerando o maior valor, c
         click_button('Adicionar ao carrinho')
         find('#div-botao-confirmar-pagamento').click
     #login
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
     #entrega
         find('#botao_adicionar_endereco').click
-        find(:xpath, '//*[@id="cidade"]/option[2]').select_option
+        find("#estado").find(".state_6476").select_option
+        find(:xpath, '//*[@id="cidade"]/option[1]').select_option
         find('#rua_form_cep').set "Rua Fernando Lopes"
         find('#numero_form_cep').set "218"
         find('#bairro_franquia_select_box_busca_cep').find(:xpath, 'option[11]').select_option
-        find(:xpath, '//*[@id="form_busca_cep_address"]/div[7]/label/p').click
+        find('#not-complement-nao-sabe-cep').click
         click_button('Buscar') 
         find(:xpath, '//*[@id="ul_filtro_endereco"]/a/li/div[2]/p').click
     #pagamento
@@ -53,6 +55,7 @@ Quando('realizo um pedido de pizza de dois sabores considerando o maior valor, c
         find('#finish_order').click
         find(:xpath, '//*[@id="swal2-content"]/div/label/p').click
         click_button('Avançar') 
+        sleep 1
 end
 
 Quando('realizo um pedido de pizza de três sabores considerando o maior valor, com complemento, borda e com troco.') do
@@ -90,17 +93,19 @@ Quando('realizo um pedido de pizza de três sabores considerando o maior valor, 
         click_button('Adicionar ao carrinho')
         find('#div-botao-confirmar-pagamento').click
     #login
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
     #entrega
         find('#botao_adicionar_endereco').click
-        find(:xpath, '//*[@id="cidade"]/option[2]').select_option
+        find("#estado").find(".state_6476").select_option
+        find(:xpath, '//*[@id="cidade"]/option[1]').select_option
         find('#rua_form_cep').set "Rua Fernando Lopes"
         find('#numero_form_cep').set "218"
         find('#bairro_franquia_select_box_busca_cep').find(:xpath, 'option[11]').select_option
-        find(:xpath, '//*[@id="form_busca_cep_address"]/div[7]/label/p').click
+        find('#not-complement-nao-sabe-cep').click
         click_button('Buscar') 
         find(:xpath, '//*[@id="ul_filtro_endereco"]/a/li/div[2]/p').click
     #pagamento
@@ -112,7 +117,8 @@ Quando('realizo um pedido de pizza de três sabores considerando o maior valor, 
         find('#order_notes').set "Observação de teste na finalização do pedido"
         find('#finish_order').click
         find(:xpath, '//*[@id="swal2-content"]/div/label/p').click
-        click_button('Avançar') 
+        click_button('Avançar')
+        sleep 1 
 end
 
 Quando('realizo um pedido de pizza de quatro sabores considerando o maior valor, com complemento, borda e com troco.') do
@@ -157,17 +163,19 @@ Quando('realizo um pedido de pizza de quatro sabores considerando o maior valor,
         click_button('Adicionar ao carrinho')
         find('#div-botao-confirmar-pagamento').click
     #login
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
     #entrega
         find('#botao_adicionar_endereco').click
-        find(:xpath, '//*[@id="cidade"]/option[2]').select_option
+        find("#estado").find(".state_6476").select_option
+        find(:xpath, '//*[@id="cidade"]/option[1]').select_option
         find('#rua_form_cep').set "Rua Fernando Lopes"
         find('#numero_form_cep').set "218"
         find('#bairro_franquia_select_box_busca_cep').find(:xpath, 'option[11]').select_option
-        find(:xpath, '//*[@id="form_busca_cep_address"]/div[7]/label/p').click
+        find('#not-complement-nao-sabe-cep').click
         click_button('Buscar') 
         find(:xpath, '//*[@id="ul_filtro_endereco"]/a/li/div[2]/p').click
     #pagamento
@@ -179,7 +187,8 @@ Quando('realizo um pedido de pizza de quatro sabores considerando o maior valor,
         find('#order_notes').set "Observação de teste na finalização do pedido"
         find('#finish_order').click
         find(:xpath, '//*[@id="swal2-content"]/div/label/p').click
-        click_button('Avançar') 
+        click_button('Avançar')
+        sleep 1 
 end
 
 Quando('realizo um pedido de pizza de dois sabores considerando o maior valor, sem complemento, sem borda e sem troco.') do
@@ -210,17 +219,19 @@ Quando('realizo um pedido de pizza de dois sabores considerando o maior valor, s
         click_button('Adicionar ao carrinho')
         find('#div-botao-confirmar-pagamento').click
     #login
+        sleep 2
         #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
     #entrega
         find('#botao_adicionar_endereco').click
-        find(:xpath, '//*[@id="cidade"]/option[2]').select_option
+        find("#estado").find(".state_6476").select_option
+        find(:xpath, '//*[@id="cidade"]/option[1]').select_option
         find('#rua_form_cep').set "Rua Fernando Lopes"
         find('#numero_form_cep').set "218"
         find('#bairro_franquia_select_box_busca_cep').find(:xpath, 'option[11]').select_option
-        find(:xpath, '//*[@id="form_busca_cep_address"]/div[7]/label/p').click
+        find('#not-complement-nao-sabe-cep').click
         click_button('Buscar') 
         find(:xpath, '//*[@id="ul_filtro_endereco"]/a/li/div[2]/p').click        
     #pagamento
@@ -230,6 +241,7 @@ Quando('realizo um pedido de pizza de dois sabores considerando o maior valor, s
         find('#finish_order').click
         find(:xpath, '//*[@id="swal2-content"]/div/label/p').click
         click_button('Avançar') 
+        sleep 1
 end
   
 Quando('realizo um pedido de pizza de três sabores considerando o maior valor, sem complemento, sem borda e sem troco.') do
@@ -267,17 +279,19 @@ Quando('realizo um pedido de pizza de três sabores considerando o maior valor, 
         click_button('Adicionar ao carrinho')
         find('#div-botao-confirmar-pagamento').click
     #login
+        sleep 2
         #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
     #entrega
         find('#botao_adicionar_endereco').click
-        find(:xpath, '//*[@id="cidade"]/option[2]').select_option
+        find("#estado").find(".state_6476").select_option
+        find(:xpath, '//*[@id="cidade"]/option[1]').select_option
         find('#rua_form_cep').set "Rua Fernando Lopes"
         find('#numero_form_cep').set "218"
         find('#bairro_franquia_select_box_busca_cep').find(:xpath, 'option[11]').select_option
-        find(:xpath, '//*[@id="form_busca_cep_address"]/div[7]/label/p').click
+        find('#not-complement-nao-sabe-cep').click
         click_button('Buscar') 
         find(:xpath, '//*[@id="ul_filtro_endereco"]/a/li/div[2]/p').click        
     #pagamento
@@ -286,7 +300,8 @@ Quando('realizo um pedido de pizza de três sabores considerando o maior valor, 
         find(:xpath, '//*[@id="label_troco"]').click
         find('#finish_order').click
         find(:xpath, '//*[@id="swal2-content"]/div/label/p').click
-        click_button('Avançar') 
+        click_button('Avançar')
+        sleep 1 
 end
   
 Quando('realizo um pedido de pizza de quatro sabores considerando o maior valor, sem complemento, sem borda e sem troco.') do
@@ -313,7 +328,7 @@ Quando('realizo um pedido de pizza de quatro sabores considerando o maior valor,
         find(:xpath, '//*[@id="pizza_sabor_index_3"]/ul/li[3]/div/div').click
         click_button('Avançar')
             #complemento do sabor
-        # find(:xpath, '//*[@id="item_pizza_sabor_complements"]/ul/li[1]/div[1]/p/label').click
+        # find(:xpath, '//*[@id="itemsleep 1a_sabor_complements"]/ul/li[1]/div[1]/p/label').click
         # find(:xpath, '//*[@id="item_pizza_sabor_complements"]/ul/li[2]/div[1]/p/label').click
         click_button('Avançar')
             #4º sabor da pizza
@@ -331,17 +346,19 @@ Quando('realizo um pedido de pizza de quatro sabores considerando o maior valor,
         click_button('Adicionar ao carrinho')
         find('#div-botao-confirmar-pagamento').click
     #login
+        sleep 2
         #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
     #entrega
         find('#botao_adicionar_endereco').click
-        find(:xpath, '//*[@id="cidade"]/option[2]').select_option
+        find("#estado").find(".state_6476").select_option
+        find(:xpath, '//*[@id="cidade"]/option[1]').select_option
         find('#rua_form_cep').set "Rua Fernando Lopes"
         find('#numero_form_cep').set "218"
         find('#bairro_franquia_select_box_busca_cep').find(:xpath, 'option[11]').select_option
-        find(:xpath, '//*[@id="form_busca_cep_address"]/div[7]/label/p').click
+        find('#not-complement-nao-sabe-cep').click
         click_button('Buscar') 
         find(:xpath, '//*[@id="ul_filtro_endereco"]/a/li/div[2]/p').click        
     #pagamento
@@ -350,5 +367,6 @@ Quando('realizo um pedido de pizza de quatro sabores considerando o maior valor,
         find(:xpath, '//*[@id="label_troco"]').click
         find('#finish_order').click
         find(:xpath, '//*[@id="swal2-content"]/div/label/p').click
-        click_button('Avançar') 
+        click_button('Avançar')
+        sleep 1 
 end

@@ -17,7 +17,8 @@ Quando('realizo um pedido com desconto geral de item sem complemento e sem troco
         find('.plus').click
         find('#div-botao-confirmar-pagamento').click
     #login
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -49,7 +50,8 @@ Quando('realizo um pedido com desconto geral de item sem complemento e sem troco
         click_button("Adicionar ao carrinho")
         find('#div-botao-confirmar-pagamento').click
     #login
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -82,6 +84,7 @@ Quando('realizo um pedido com desconto geral de item com complemento e sem troco
         click_button("Adicionar ao carrinho")
         find('#div-botao-confirmar-pagamento').click
     #login
+        sleep 2
         #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
@@ -104,7 +107,7 @@ Quando('realizo um pedido com desconto geral de item com complemento e sem troco
 end
   
 Quando('realizo um pedido com desconto geral de item com complemento e com troco.') do
-    click_button("CONCORDO")
+        click_button("CONCORDO")
     #cardápio
         find('#category_155226').click
         find('#item_item_1061058').click
@@ -114,6 +117,7 @@ Quando('realizo um pedido com desconto geral de item com complemento e com troco
         click_button("Adicionar ao carrinho")
         find('#div-botao-confirmar-pagamento').click
     #login
+        sleep 2
         #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
@@ -147,6 +151,7 @@ Quando('realizo um pedido com desconto geral de item com o preço da variação 
         click_button("Adicionar ao carrinho")
         find('#div-botao-confirmar-pagamento').click
     #login
+        sleep 2
         #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"

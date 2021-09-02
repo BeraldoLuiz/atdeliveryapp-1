@@ -11,6 +11,7 @@ Quando('realizo um pedido de item sem complemento e sem troco.') do
         click_button('Adicionar ao carrinho')
         find('#div-botao-confirmar-pagamento').click
     #login
+        sleep 2
         #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
@@ -40,7 +41,8 @@ Quando('realizo um pedido de item com complemento e sem troco.') do
         click_button('Adicionar ao carrinho')
         find('#div-botao-confirmar-pagamento').click
     #login
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -67,7 +69,8 @@ Quando('realizo um pedido de item sem complemento e com troco.') do
         click_button('Adicionar ao carrinho')
         find('#div-botao-confirmar-pagamento').click
     #login
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -96,7 +99,8 @@ Quando('realizo um pedido de item com complemento e com troco.') do
         click_button('Adicionar ao carrinho')
         find('#div-botao-confirmar-pagamento').click
     #login
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -134,7 +138,8 @@ Quando('realizo um pedido de pizza com complemento e com troco.') do
         click_button('Adicionar ao carrinho')
         find('#div-botao-confirmar-pagamento').click
     #login
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -163,7 +168,8 @@ Quando('realizo um pedido de pizza sem complemento e sem troco.') do
         click_button('Adicionar ao carrinho')
         find('#div-botao-confirmar-pagamento').click
     #login
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -209,7 +215,8 @@ Quando('realizo um pedido de pizza de dois sabores com complemento, borda e com 
         click_button('Adicionar ao carrinho')
         find('#div-botao-confirmar-pagamento').click
     #login
-            #find('#btn_entrar_cadastrar').click
+        sleep 2    
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -262,7 +269,8 @@ Quando('realizo um pedido de pizza de três sabores com complemento, borda e com
         click_button('Adicionar ao carrinho')
         find('#div-botao-confirmar-pagamento').click    
     #login
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -322,7 +330,8 @@ Quando('realizo um pedido de pizza de quatro sabores com complemento, borda e co
         click_button('Adicionar ao carrinho')
         find('#div-botao-confirmar-pagamento').click    
     #login
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -363,7 +372,8 @@ Quando('realizo um pedido de pizza de dois sabores sem complemento, sem borda e 
         click_button('Adicionar ao carrinho')
         find('#div-botao-confirmar-pagamento').click
     #login
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -409,7 +419,8 @@ Quando('realizo um pedido de pizza de três sabores sem complemento, sem borda e
         click_button('Adicionar ao carrinho')
         find('#div-botao-confirmar-pagamento').click    
     #login
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -464,8 +475,8 @@ Quando('realizo um pedido de pizza de quatro sabores sem complemento, sem borda 
         click_button('Adicionar ao carrinho')
         find('#div-botao-confirmar-pagamento').click    
     #login
-        
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -531,8 +542,8 @@ Quando('realizo um pedido de itens comuns e pizza de dois sabores com complement
             #confirmar_pagamento
         find('#div-botao-confirmar-pagamento').click
     #login
-        
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -565,8 +576,8 @@ Quando('realizo um pedido de item com o preço da variação promocionado.') do
         find('#div-botao-confirmar-pagamento').click
         
     #login
-        
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -600,8 +611,8 @@ Quando('realizo um pedido de item sem complemento e sem troco, retirando no esta
         
         find('#div-botao-confirmar-pagamento').click
     #login
-        
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -629,8 +640,8 @@ Quando('realizo um pedido de item com complemento e sem troco, retirando no esta
         
         find('#div-botao-confirmar-pagamento').click
     #login
-        
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -656,8 +667,8 @@ Quando('realizo um pedido de item sem complemento e com troco, retirando no esta
         
         find('#div-botao-confirmar-pagamento').click
     #login
-        
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -685,8 +696,8 @@ Quando('realizo um pedido de item com complemento e com troco, retirando no esta
         
         find('#div-botao-confirmar-pagamento').click
     #login
-        
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -724,8 +735,8 @@ Quando('realizo um pedido de pizza com complemento e com troco, retirando no est
         
         find('#div-botao-confirmar-pagamento').click
     #login
-        
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -753,8 +764,8 @@ Quando('realizo um pedido de pizza sem complemento e sem troco, retirando no est
         
         find('#div-botao-confirmar-pagamento').click
     #login
-        
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -800,8 +811,8 @@ Quando('realizo um pedido de pizza de dois sabores com complemento, borda e com 
         
         find('#div-botao-confirmar-pagamento').click
     #login
-        
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -854,8 +865,8 @@ Quando('realizo um pedido de pizza de três sabores com complemento, borda e com
         
         find('#div-botao-confirmar-pagamento').click    
     #login
-        
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -915,8 +926,8 @@ Quando('realizo um pedido de pizza de quatro sabores com complemento, borda e co
         
         find('#div-botao-confirmar-pagamento').click    
     #login
-        
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -957,8 +968,8 @@ Quando('realizo um pedido de pizza de dois sabores sem complemento, sem borda e 
         
         find('#div-botao-confirmar-pagamento').click
     #login
-        
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -1004,8 +1015,8 @@ Quando('realizo um pedido de pizza de três sabores sem complemento, sem borda e
         
         find('#div-botao-confirmar-pagamento').click    
     #login
-        
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -1056,8 +1067,8 @@ Quando('realizo um pedido de pizza de quatro sabores sem complemento, sem borda 
         
         find('#div-botao-confirmar-pagamento').click    
     #login
-        
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -1118,8 +1129,8 @@ Quando('realizo um pedido de itens comuns e pizza de dois sabores com complement
             #confirmar_pagamento
         find('#div-botao-confirmar-pagamento').click
     #login
-        
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
@@ -1147,8 +1158,8 @@ Quando('realizo um pedido de item com o preço da variação promocionado, retir
         find('#div-botao-confirmar-pagamento').click
         
     #login
-        
-            #find('#btn_entrar_cadastrar').click
+        sleep 2
+        #find('#btn_entrar_cadastrar').click
         find('#client_email').set "anderson.neemo@gmail.com"
         find('#client_password').set "neemo2020"
         click_button('ENTRAR')
